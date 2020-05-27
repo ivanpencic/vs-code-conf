@@ -1,0 +1,82 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "editor.renderControlCharacters": true,
+
+    "editor.renderWhitespace": "all",
+
+
+
+    "workbench.colorTheme": "Monokai",
+    
+    "editor.tokenColorCustomizations": {
+
+    "[Monokai]": {
+
+        "keywords": "#FF6600",
+        
+        "functions": "#ff00ff",
+        
+        "strings": "#e8ec02",
+        "numbers": "#99cc99",
+        "comments": "#00FF00",
+        "textMateRules": [
+            
+            {
+                "scope": [
+                    "keyword.operator",
+                ],
+                "settings": {"foreground": "#FF6600"}
+                
+            },
+            {
+                "scope": [
+                "constant.language",
+                "storage.type.class"
+            ],
+            "settings": {"foreground": "#FF6600"}
+            
+        },
+
+
+        {
+            "scope": [
+                "variable.language",
+                "constant.character", 
+                "constant.other",
+                "entity.other.inherited-class", 
+                "entity.name.type", 
+                "entity.name.class", 
+                "entity.name.namespace", 
+                "entity.name.scope-resolution",
+
+            ],
+            "settings": {
+                "foreground": "#ffffff",
+                "fontStyle": "italic"}
+        },
+
+        {
+            "scope": "string.quoted.docstring.multi.python",
+            "settings":{
+              "foreground": "#00FF00"
+            }
+          },
+
+          {
+            "scope": "string.quoted.docstring.single.python",
+            "settings":{
+              "foreground": "#00FF00"
+            }
+          },
+
+        ],
+    
+    }
+    
+},
+"editor.minimap.enabled": false,
+"terminal.integrated.cwd": "${fileDirname}",
+"window.zoomLevel": -1
+
+}
+
